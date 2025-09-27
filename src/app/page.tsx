@@ -6,7 +6,7 @@ import { ChevronDown, Mail, Phone, MapPin, Calendar, Users, BookOpen, Award, Ext
 const FGCUWebsite = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
-  const toggleDropdown = (dropdown) => {
+  const toggleDropdown = (dropdown: React.SetStateAction<null>) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
 
