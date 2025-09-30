@@ -29,12 +29,14 @@ Install dependencies:
 npm install
 ```
 Replace 'GAWebsite' with your repo name at the following lines in next.config.ts file:
+```
 basePath: isProd ? "/GAWebsite" : "",
 assetPrefix: isProd ? "/GAWebsite/" : "",
-
+```
 Change 'UdiOEagle' to your GitHub Username and 'GAWebsite' to your repo name at the following line in package.json: 
+```
 "homepage": "https://UdiOEagle.github.io/GAWebsite",
-
+```
 Run
 ```bash
 npm deploy
