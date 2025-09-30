@@ -2,8 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
-
+First install dependencies: 
+```bash
+npm install
+```
+thne, run the development server:
 ```bash
 npm run dev
 # or
@@ -19,6 +22,26 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Forking and using GH-pages
+Install dependencies: 
+```bash
+npm install
+```
+Replace 'GAWebsite' with your repo name at the following lines in next.config.ts file:
+basePath: isProd ? "/GAWebsite" : "",
+assetPrefix: isProd ? "/GAWebsite/" : "",
+
+Change 'UdiOEagle' to your GitHub Username and 'GAWebsite' to your repo name at the following line in package.json: 
+"homepage": "https://UdiOEagle.github.io/GAWebsite",
+
+Run
+```bash
+npm deploy
+```
+
+In GitHub set up pages to run from gh deploy branch, root directory.
+
 
 ## Learn More
 
