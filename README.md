@@ -40,7 +40,7 @@ Run
 npm deploy
 ```
 
-In GitHub set up pages to run from gh deploy branch, root directory.
+In GitHub set up pages to run from gh-pages branch, root directory.
 
 
 ## Learn More
